@@ -9,7 +9,6 @@ interface DetailsScreenProps { }
 
 const DetailsScreen: React.FC<DetailsScreenProps> = ({ navigation, route }: any) => {
   const ItemOfIndex = useStore((state: any) => route?.params?.type == "Coffee" ? state.CoffeeList : state.BeanList)[route?.params?.index];
-  console.log("indetails", ItemOfIndex)
   const deleteFromFavoriteList = useStore(
     (state: any) => state.deleteFromFavoriteList,
   );

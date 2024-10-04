@@ -7,7 +7,7 @@ import CustomIcons from '../components/CustomIcons';
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
 import FavouritesScreen from '../screens/FavouritesScreen';
-import PaymentScreen from '../screens/PaymentScreen';
+import OrderHistoryScreen from '../screens/OrderHistoryScreen';
 
 
 const Tab = createBottomTabNavigator();
@@ -34,7 +34,7 @@ const TabsNavigator = () => {
                     <CustomIcons name='like' size={25} color={focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex} />
                 )
             }} />
-            <Tab.Screen name='PaymentHistory' component={PaymentScreen} options={{
+            <Tab.Screen name='PaymentHistory' component={OrderHistoryScreen} options={{
                 tabBarIcon: ({ focused, color, size }) => (
                     <CustomIcons name='bell' size={25} color={focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex} />
                 )

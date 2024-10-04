@@ -118,7 +118,7 @@ const HomeScreen = ({ navigation }: any) => {
                     }}>
                         <CustomIcons
                             style={styles.inputIcon}
-                            name='Search'
+                            name='search'
                             size={FONTSIZE.size_18}
                             color={searchText?.length > 0 ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex}
                         />

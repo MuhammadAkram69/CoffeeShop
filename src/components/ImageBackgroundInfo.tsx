@@ -50,9 +50,6 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
                     </Pressable>
                 </View>) : (<View style={styles.ImageHeaderBarContainerWithoutBack}>
                     <Pressable>
-                        <GradientBGicon name='left' color={COLORS.primaryGreyHex} size={FONTSIZE.size_16} />
-                    </Pressable>
-                    <Pressable>
                         <GradientBGicon name='like' color={favourite ? COLORS.primaryRedHex : COLORS.primaryGreyHex} size={FONTSIZE.size_16} />
                     </Pressable>
                 </View>)}
